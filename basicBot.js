@@ -604,7 +604,7 @@
                 lockTimer: setTimeout(function () {
                 }, 1000),
                 locked: false,
-                lockBooth: function () {
+                lockBooth: function () {/*
                     API.moderateLockWaitList(!basicBot.roomUtilities.booth.locked);
                     basicBot.roomUtilities.booth.locked = false;
                     if (basicBot.settings.lockGuard) {
@@ -612,10 +612,14 @@
                             API.moderateLockWaitList(basicBot.roomUtilities.booth.locked);
                         }, basicBot.settings.maximumLocktime * 60 * 1000);
                     }
+                
+                    */
                 },
                 unlockBooth: function () {
+                	/*
                     API.moderateLockWaitList(basicBot.roomUtilities.booth.locked);
                     clearTimeout(basicBot.roomUtilities.booth.lockTimer);
+                */
                 }
             },
             afkCheck: function () {
