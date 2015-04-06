@@ -233,7 +233,6 @@
             "Minhas fontes dizem que sim.",
             "hmm, claro.",
             "Pode ter certeza",
-            "Outlook not so good.",
             "Melhor nem comentar.",
             "Duvido muito.",
             "Claro, com certeza.",
@@ -1555,7 +1554,7 @@
             },
 
             ballCommand: {
-                command: ['8ball', 'ask'],
+                command: ['8ball', 'askosama'],
                 rank: 'user',
                 type: 'startsWith',
                 functionality: function (chat, cmd) {
