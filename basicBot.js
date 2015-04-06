@@ -926,6 +926,11 @@
                 var name = obj.dj.username;
                 API.sendChat(subChat(basicBot.chat.timelimit, {name: name, maxlength: basicBot.settings.maximumSongLength}));
                 API.moderateForceSkip();
+                            var dj = API.getDJ();
+                            var id = dj.id;
+                            var name = dj.username;
+                            var msgSend = '@' + name + ': ';
+                basicBot.userUtilities.moveUser(id, basicBot.settings.lockskipPosition, false);
             }
             if (user.ownSong) {
                 API.sendChat(subChat(basicBot.chat.permissionownsong, {name: user.username}));
