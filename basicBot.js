@@ -922,38 +922,48 @@
                 }
             }
             var newMedia = obj.media;
-            if (basicBot.settings.timeGuard && newMedia.duration > basicBot.settings.maximumSongLength * 60 && !basicBot.room.roomevent) {
+            if (basicBot.settings.timeGuard && newMedia.duration > basicBot.settings.maximumSongLength * 60 && !basicBot.room.roomevent) 
+            {
                 var name = obj.dj.username;
                 API.sendChat(subChat(basicBot.chat.timelimit, {name: name, maxlength: basicBot.settings.maximumSongLength}));
                 API.moderateForceSkip();
-                            var dj = API.getDJ();
+                
+                	    var dj = API.getDJ();
                             var id = dj.id;
                             var name = dj.username;
                             var msgSend = '@' + name + ': ';
-               if (basicBot.room.skippable) {
+               if (basicBot.room.skippable) 
+               {
                             var dj = API.getDJ();
                             var id = dj.id;
                             var name = dj.username;
                             var msgSend = '@' + name + ': ';
                             basicBot.room.queueable = false;
 
-                            if (chat.message.length === cmd.length) {
+                            if (chat.message.length === cmd.length) 
+                            {
                                 API.sendChat(subChat(basicBot.chat.usedlockskip, {name: chat.un}));
-                                setTimeout(function (id) {
+                                setTimeout(function (id) 
+                                {
                                     API.moderateForceSkip();
                                     basicBot.room.skippable = false;
-                                    setTimeout(function () {
+                                    setTimeout(function () 
+                                    {
                                         basicBot.room.skippable = true
                                     }, 5 * 1000);
-                                    setTimeout(function (id) {
+                                    setTimeout(function (id) 
+                                    {
                                         basicBot.userUtilities.moveUser(id, basicBot.settings.lockskipPosition, false);
                                         basicBot.room.queueable = true;
-                                        setTimeout(function () {
+                                        setTimeout(function () 
+                                        {
                                         }, 1000);
                                     }, 1500, id);
                                 }, 1000, id);
                                 return void (0);
                             }
+               }
+                           
             }
             if (user.ownSong) {
                 API.sendChat(subChat(basicBot.chat.permissionownsong, {name: user.username}));
