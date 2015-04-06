@@ -1582,7 +1582,7 @@
                 command: 'bater',
                 rank: 'user',
                 type: 'startsWith',
-                bater: [
+                cookies: [
                     'te deu uma surra de piroca',
                     'atacou uma banana',
                     'Alargou seu cagador.',
