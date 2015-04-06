@@ -1582,16 +1582,16 @@
                 command: 'bater',
                 rank: 'user',
                 type: 'startsWith',
-                cookies: [
+                bater: [
                     'te deu uma surra de piroca',
                     'atacou uma banana',
                     'Alargou seu cagador.',
                     'socou teu nariz',
                     'te bateu com um vibrador usado',
                 ],
-                getCookie: function () {
-                    var c = Math.floor(Math.random() * this.cookies.length);
-                    return this.cookies[c];
+                getBater: function () {
+                    var c = Math.floor(Math.random() * this.bater.length);
+                    return this.bater[c];
                 },
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
@@ -1614,7 +1614,7 @@
                                 return API.sendChat(subChat(basicBot.chat.selfcookie, {name: name}));
                             }
                             else {
-                                return API.sendChat(subChat(basicBot.chat.cookie, {nameto: user.username, namefrom: chat.un, cookie: this.getCookie()}));
+                                return API.sendChat(subChat(basicBot.chat.cookie, {nameto: user.username, namefrom: chat.un, cookie: this.getbater()}));
                             }
                         }
                     }
