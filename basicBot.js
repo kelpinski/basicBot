@@ -6,7 +6,7 @@
 
 
 (function () {
-
+s
     API.getWaitListPosition = function(id){
         if(typeof id === 'undefined' || id === null){
             id = API.getUser().id;
@@ -213,7 +213,7 @@
             timeGuard: true,
             maximumSongLength: 10,
             autodisable: true,
-            commandCooldown: 1,
+            commandCooldown: 5,
             usercommandsEnabled: true,
             lockskipPosition: 3,
             lockskipReasons: [
