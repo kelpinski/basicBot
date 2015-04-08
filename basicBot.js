@@ -1,3 +1,20 @@
+Skip to content
+ This repository
+Explore
+Gist
+Blog
+Help
+@italocjs italocjs
+ 
+ Unwatch 1
+  Star 0
+  Fork 275
+italocjs/basicBot
+forked from Yemasthui/basicBot
+ tree: 6f5e2c3edb  basicBot/basicBot.js
+@italocjsitalocjs 2 days ago Update basicBot.js
+6 contributors @Yemasthui @Benzi @italocjs @ServePeak @WouterG @Hunchmun
+RawBlameHistory    3399 lines (3231 sloc)  166.385 kb
 /**
  *Copyright 2014 Yemasthui
  *Modifications (including forks) of the code to fit personal needs are allowed only for personal use and should refer back to the original source.
@@ -6,6 +23,7 @@
 
 
 (function () {
+
     API.getWaitListPosition = function(id){
         if(typeof id === 'undefined' || id === null){
             id = API.getUser().id;
@@ -3155,7 +3173,6 @@
                              indexMuted = i;
                              wasMuted = true;
                              }
-
                              }
                              if (!wasMuted) return API.sendChat(subChat(basicBot.chat.notmuted, {name: chat.un}));
                              basicBot.room.mutedUsers.splice(indexMuted);
@@ -3395,3 +3412,5 @@
 
     loadChat(basicBot.startup);
 }).call(this);
+Status API Training Shop Blog About
+© 2015 GitHub, Inc. Terms Privacy Security Contact
