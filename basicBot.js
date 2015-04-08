@@ -1,3 +1,9 @@
+/**
+ *Copyright 2014 Yemasthui
+ *Modifications (including forks) of the code to fit personal needs are allowed only for personal use and should refer back to the original source.
+ *This software is not for profit, any extension, or unauthorised person providing this software is not authorised to be in a position of any monetary gain from this use of this software. Any and all money gained under the use of the software (which includes donations) must be passed on to the original author.
+ */
+
 
 (function () {
 
@@ -207,7 +213,7 @@
             timeGuard: true,
             maximumSongLength: 10,
             autodisable: true,
-            commandCooldown: 5,
+            commandCooldown: 1,
             usercommandsEnabled: true,
             lockskipPosition: 3,
             lockskipReasons: [
@@ -916,25 +922,15 @@
                 }
             }
             var newMedia = obj.media;
-            if (basicBot.settings.timeGuard && newMedia.duration > basicBot.settings.maximumSongLength * 60 && !basicBot.room.roomevent) 
-            {
+            if (basicBot.settings.timeGuard && newMedia.duration > basicBot.settings.maximumSongLength * 60 && !basicBot.room.roomevent) {
                 var name = obj.dj.username;
                 API.sendChat(subChat(basicBot.chat.timelimit, {name: name, maxlength: basicBot.settings.maximumSongLength}));
-                                setTimeout(function (id) {
-                                    API.moderateForceSkip();
-                                    basicBot.room.skippable = false;
-                                    setTimeout(function () {
-                                        basicBot.room.skippable = true
-                                    }, 5 * 1000);
-                                    setTimeout(function (id) {
-                                        basicBot.userUtilities.moveUser(id, basicBot.settings.lockskipPosition, false);
-                                        basicBot.room.queueable = true;
-                                        setTimeout(function () {
-                                        }, 1000);
-                                    }, 1500, id);
-                                }, 1000, id);
-  
-                
+                API.moderateForceSkip();
+                            var dj = API.getDJ();
+                            var id = dj.id;
+                            var name = dj.username;
+                            var msgSend = '@' + name + ': ';
+                basicBot.userUtilities.moveUser(id, basicBot.settings.lockskipPosition, false);
             }
             if (user.ownSong) {
                 API.sendChat(subChat(basicBot.chat.permissionownsong, {name: user.username}));
@@ -3150,6 +3146,7 @@
                              indexMuted = i;
                              wasMuted = true;
                              }
+
                              }
                              if (!wasMuted) return API.sendChat(subChat(basicBot.chat.notmuted, {name: chat.un}));
                              basicBot.room.mutedUsers.splice(indexMuted);
@@ -3389,5 +3386,3 @@
 
     loadChat(basicBot.startup);
 }).call(this);
-Status API Training Shop Blog About
-© 2015 GitHub, Inc. Terms Privacy Security Contact
