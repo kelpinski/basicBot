@@ -172,7 +172,7 @@
     var botCreatorIDs = ["3851534", "4105209"];
 
     var basicBot = {
-        version: "6.6.6",
+        version: "7.7.7",
         status: true,
         name: "OsamaBot",
         loggedInID: null,
@@ -222,19 +222,19 @@
             "Deve ser,seu resto de aborto.",
             "Sim, PORRA!",
             "Não sei, tenho cara de google?",
-            "Sem duvidas.",
-            "Minhas fontes dizem que sim.",
-            "hmm, claro.",
-            "Pode ter certeza",
-            "Melhor nem comentar.",
-            "Duvido muito.",
-            "Claro, com certeza.",
-            "certamente.",
-            "Não sei.",
-            "Acho que sim.",
-            "Não",
-            "Minhas fontes dizem não.",
-            "sim, não, talvez, error404: erro não encontrado. ALLAHU AKBAAAAAAR."
+            "Sem duvidas, que você é um viadão.",
+            "Minhas fontes de 220v dizem que não.",
+            "Claro lesk, se é loco hein cachuera.",
+            "Pode ter certeza, que sua mãe eu comi.",
+            "Melhor nem comentar, mas vou comentar porque eu quero PORRA.",
+            "Duvido muito que você vai deixar de ser falho.",
+            "Claro, com certeza que tu fapa pra trap trapfag viado.",
+            "certamente que seu cú é meu.",
+            "Não sei, mas tua mãe sabe.",
+            "Será? Pergunta na puta que te pariu.",
+            "JÁ FALEI QUE NÃO PORRA!.",
+            "Minhas fontes 110v dizem que não",
+            "não,sim,com certeza, ou nunca? fica a sua escolha."
             ],
             
     
@@ -1558,7 +1558,7 @@
             },
 
             ballCommand: {
-                command: 'askosama',
+                command: 'askgostoso',
                 rank: 'user',
                 type: 'startsWith',
                 functionality: function (chat, cmd) {
@@ -1581,7 +1581,7 @@
                 rank: 'user',
                 type: 'startsWith',
                 bater: [
-                    'te deu uma surra de piroca',
+                    'te sarro com minha rola',
                     'atacou uma banana',
                     'Alargou seu cagador.',
                     'socou teu nariz',
