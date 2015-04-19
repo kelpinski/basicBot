@@ -219,9 +219,9 @@
                 ["unavailable", "The song you played was not available for some users. "]
             ],
             ball: [
-            "Bem provavel.",
-            "Sim.",
-            "eeh, não sei, pergunta pros universitarios.",
+            "Deve ser,seu resto de aborto.",
+            "Sim, PORRA!",
+            "Não sei, tenho cara de google?",
             "Sem duvidas.",
             "Minhas fontes dizem que sim.",
             "hmm, claro.",
@@ -2642,7 +2642,7 @@
 
             pingCommand: {
                 command: 'ping',
-                rank: 'user',
+                rank: 'host',
                 type: 'exact',
                 functionality: function (chat, cmd) {
                     if (this.type === 'exact' && chat.message.length !== cmd.length) return void (0);
