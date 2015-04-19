@@ -7,16 +7,16 @@
     "online": "/me %%BOTNAME%% v%%VERSION%% ESTA DE OLHO EM VOCÊ!",
 
 
-    "welcome": "Bem vindo(a), %%NAME%%, <3",
-    "welcomeback": "Bem vindo(a) de volta, %%NAME%%, sentimos saudades <3",
-    "songknown": "@%%NAME%%, Essa musica ta no historico anta. Vou te pulei",
+    "welcome": "OLÁ SEU FILHA DA PUTA, %%NAME%%, HOJE SEU CÚ É MEU",
+    "welcomeback": "VOLTOU CARALHO, %%NAME%%, SAUDADES DESSE TEU RABO",
+    "songknown": "@%%NAME%%, Essa musica ta no historico cara, pulei :DD",
     "timelimit": "@%%NAME%%, sua música tem duração maior que o limite permitido (%%MAXLENGTH%% minutos).",
     "permissionownsong": "/me :up: @%%NAME%% tem permissão para tocar música de própria autoria!",
     "isblacklisted": "/me Essa música está na lista negra %%BLACKLIST%%! Pulando música...",
 
 
-    "isopen": "/me RODA A RODA!, ROLETA DO TIO OSAMA !join para explodir algo!",
-    "winnerpicked": "/me O viadão do @%%NAME%% ganhou a posição %%POSITION%% na roleta do tio osama.",
+    "isopen": "/me QUER GANHAR LUGARES? Venha para a roleta do Kelpinski Gostoso",
+    "winnerpicked": "/me O viadinho do @%%NAME%% ganhou a posição %%POSITION%% na roleta do kelpinski gostoso.",
     
     "ball": "/me A pergunta de %%NAME%% foi: \"%%QUESTION%%\" e a resposta de %%BOTNAME%% é: \"%%RESPONSE%%\"",
     "notghosting": "[%%NAME1%%] %%NAME2%% não virou fantasma.",
@@ -38,9 +38,9 @@
     "afkremove": "@%%NAME%%, você foi removido por estar inativo.",
 
 
-    "caps": "@%%NAME%%, desligue seu capslock, por favor.",
+    "caps": "@%%NAME%%, DESLIGA O CAPS FILHA DA PUTA!.",
     "askskip": "@%%NAME%%, não peça skips.",
-    "spam": "/me @%%NAME%%, não faça spam, por favor.",
+    "spam": "/me @%%NAME%%, sem spam, PORRA.",
     "roomadvertising": "@%%NAME%%, não poste link de outras comunidades, por favor.",
     "adfly": "@%%NAME%%, por favor mude seu script autowoot. Nós sugerimos plugCubed: http://plugcubed.net/",
 
